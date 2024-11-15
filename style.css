@@ -1,0 +1,147 @@
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+    background-color: #FFFAF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    background-color: #FFF8DC;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Tiêu đề */
+header h1 {
+    font-size: 2em;
+    color: #FF69B4;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #FF8C00;
+    margin-bottom: 20px;
+}
+
+/* Phần giới thiệu bản thân */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #FFB6C1;
+    margin-bottom: 20px;
+}
+
+.introduction h2 {
+    font-size: 1.8em;
+    color: #FF69B4;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+/* Phần khoe thành tích */
+.achievements {
+    margin-top: 20px;
+}
+
+.achievements h2 {
+    font-size: 1.6em;
+    color: #FF69B4;
+    margin-bottom: 10px;
+}
+
+.achievements-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.achievement-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #FFB6C1;
+    transition: transform 0.3s;
+}
+
+.achievement-image:hover {
+    transform: scale(1.1);
+}
+
+/* Phần chữ viết đẹp */
+.handwriting {
+    margin-top: 20px;
+}
+
+.handwriting h2 {
+    font-size: 1.6em;
+    color: #FF69B4;
+    margin-bottom: 10px;
+}
+
+.handwriting p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.handwriting-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #FFB6C1;
+    margin-bottom: 20px;
+}
+
+/* Đảm bảo tính tương thích trên điện thoại */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .introduction h2,
+    .achievements h2,
+    .handwriting h2 {
+        font-size: 1.5em;
+    }
+
+    .achievements-gallery {
+        gap: 8px;
+    }
+
+    .achievement-image {
+        width: 100px;
+        height: 100px;
+    }
+}
